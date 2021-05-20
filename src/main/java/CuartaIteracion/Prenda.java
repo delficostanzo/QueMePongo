@@ -1,24 +1,18 @@
 package CuartaIteracion;
 
-import SegundaIteracion.CategoriaException;
 import SegundaIteracion.ColorException;
-import SegundaIteracion.MaterialException;
 import SegundaIteracion.TipoException;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class Prenda {
     private TipoPrenda tipoSeleccionado;
-    private Material materialSeleccionado;
+    private MaterialException materialSeleccionado;
     private Trama tramaSeleccionada;
     private Color colorPrincipalSeleccionado;
     private Color colorSecundarioSeleccionado;
 
 
 
-    Prenda(TipoPrenda tipoSolicitado,Material materialSolicitado,  Trama tramaSolicitada, Color colorPrincipalSolicitado, Color colorSecundarioSolicitado) {
+    Prenda(TipoPrenda tipoSolicitado, MaterialException materialSolicitado, Trama tramaSolicitada, Color colorPrincipalSolicitado, Color colorSecundarioSolicitado) {
         //como requerimento primero lo que cargamos es el tipo de prenda solicitado:
         if (tipoSolicitado == null) {
             throw new TipoException("Debes seleccionar un tipo de atuendo a utilizar");
@@ -27,7 +21,7 @@ public class Prenda {
 
 
         if (materialSolicitado == null) {
-            throw new MaterialException("Debes seleccionar un tipo de material para la prenda");
+            throw new SegundaIteracion.MaterialException("Debes seleccionar un tipo de material para la prenda");
         }
         if(!tipoSolicitado.admiteMaterial(materialSolicitado)){
             throw new TipoException("Debes seleccionar un material consistente con el tipo de prenda");
