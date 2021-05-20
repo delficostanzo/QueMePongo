@@ -1,9 +1,12 @@
 package CuartaIteracion;
 
+import SegundaIteracion.*;
+
 public class RepoPrenda {
     //para la prenda tendria q validar que se pueda crear una prenda, en base de eso generara una prenda, sino tirara error
+
     private TipoPrenda tipoSeleccionado;
-    private MaterialException materialSeleccionado;
+    private Material materialSeleccionado;
     private Color colorPrincipalSeleccionado;
     private Color colorSecundarioSeleccionado;
     private Trama tramaSeleccionada;
@@ -25,11 +28,12 @@ public class RepoPrenda {
         this.colorSecundarioSeleccionado = colorSecundarioNuevo;
     }
 
-    public void modificarMaterialSeleccionado(MaterialException materialNuevo) {
+    public void modificarMaterialSeleccionado(Material materialNuevo) {
         this.materialSeleccionado = materialNuevo;
     }
 
     public void modificarTramaSeleccionado(Trama tramaNuevo) {
         this.tramaSeleccionada = tramaNuevo;
     }
+
 }
