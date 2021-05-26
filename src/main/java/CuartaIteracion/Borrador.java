@@ -2,7 +2,7 @@ package CuartaIteracion;
 
 import SegundaIteracion.*;
 
-public class RepoPrenda {
+public class Borrador {
     //para la prenda tendria q validar que se pueda crear una prenda, en base de eso generara una prenda, sino tirara error
 
     private TipoPrenda tipoSeleccionado;
