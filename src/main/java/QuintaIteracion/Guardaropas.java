@@ -53,3 +53,4 @@ public class Guardaropas {
     private List<Prenda> obtenerAtuendosSegunTemperatura(BigDecimal temperatura){
         return prendas.stream().filter(prenda -> prenda.temperaturaValida(temperatura)).collect(Collectors.toList());
     }
+}

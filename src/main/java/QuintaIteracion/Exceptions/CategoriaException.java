@@ -2,7 +2,7 @@ package QuintaIteracion.Exceptions;
 
 public class CategoriaException extends RuntimeException {
 
-    CategoriaException(String msg) {
+    public CategoriaException(String msg) {
         super(msg);
     }
 }

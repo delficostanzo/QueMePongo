@@ -1,7 +1,7 @@
 package QuintaIteracion.Exceptions;
 
 public class TipoException extends RuntimeException{
-    TipoException(String msg){
+    public TipoException(String msg){
         super(msg);
     }
 }
