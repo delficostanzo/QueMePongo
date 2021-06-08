@@ -1,6 +1,9 @@
-package QuintaIteracion;
+package SextaIteracion;
 
-import QuintaIteracion.Exceptions.*;
+
+import SextaIteracion.Exceptions.ColorException;
+import SextaIteracion.Exceptions.MaterialException;
+import SextaIteracion.Exceptions.TipoException;
 
 import java.math.BigDecimal;
 
@@ -44,11 +47,10 @@ public class Prenda {
             this.tramaSeleccionada = tramaSolicitada;
         }
 
-
-
         if (colorPrincipalSolicitado == null) {
             throw new ColorException("Debes seleccionar un color de prenda");
         }
+
         this.colorPrincipalSeleccionado = colorPrincipalSolicitado;
         //puede ser null el color secundario, no deberia generar ninguna excepcion
         this.colorSecundarioSeleccionado = colorSecundarioSolicitado;
